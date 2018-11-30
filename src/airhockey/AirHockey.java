@@ -270,13 +270,13 @@ public class AirHockey extends JPanel implements KeyListener,Runnable,ActionList
     
     public void paint(Graphics g){
         super.paint(g);                                                              //   ???
-        Image ballimg = Toolkit.getDefaultToolkit().getImage("images/soccer-ball.gif");
-        Image batimg_brown = Toolkit.getDefaultToolkit().getImage("images/brown_rectangle.gif");
-        Image batimg_blue = Toolkit.getDefaultToolkit().getImage("images/blue_rectangle.gif");
-        Image batimg_green = Toolkit.getDefaultToolkit().getImage("images/green_rectangle.gif");
-        Image batimg_orange = Toolkit.getDefaultToolkit().getImage("images/orange_rectangle.gif");
-        Image batimg_red = Toolkit.getDefaultToolkit().getImage("images/red_rectangle.gif");
-        Image batimg_yellow = Toolkit.getDefaultToolkit().getImage("images/yellow_rectangle.gif");
+        Image ballimg = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/images/soccer-ball.gif"));
+        Image batimg_brown = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/images/brown_rectangle.gif"));
+        Image batimg_blue = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/images/blue_rectangle.gif"));
+        Image batimg_green = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/images/green_rectangle.gif"));
+        Image batimg_orange = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/images/orange_rectangle.gif"));
+        Image batimg_red = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/images/red_rectangle.gif"));
+        Image batimg_yellow = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/images/yellow_rectangle.gif"));
         g.setColor(Color.GRAY);
         g.fillRect(0, 0, 800, 785);
         g.setColor(Color.WHITE);
